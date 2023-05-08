@@ -1,0 +1,87 @@
+/* Задание на странице */
+.task {
+  display: block;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.task-suite {
+  height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.connections__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.connections__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.connections__row_err {
+  box-shadow: none;
+  border: 2px solid red;
+}
+
+.connections__col_controls {
+  margin-left: auto;
+}
+
+.connections__btn-remove {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.connections .text__selected {
+  margin: 0 !important;
+}
+
+.text .text__selected {
+  cursor: pointer !important;
+}
+
+.text__input {
+  padding-right: 0 !important;
+  cursor: inherit;
+}
+
+.text__input::after {
+  content: none !important;
+}
+
+/* Отображение задания на мобильных устройствах */
+@media screen and (max-width: 767px) {
+  .task {
+    border: none;
+  }
+
+  .task_focused {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .connections__row {
+    flex-direction: column;
+  }
+}
