@@ -36,6 +36,13 @@ All in all, the annotated corpus comprises a grand total of 750 distinct tasks, 
 ![alt text](https://github.com/soimmary/NEREL_thesis/blob/main/postprocessing/annotation_results.png)
 
 # 4. Results of relation extracion
+We carried out experiments on the named entity relation dataset we have collected. Following the strategy of (Loukachevitch et al., 2021), we adopted an OpenNRE framework (Han et al., 2019) and used BERT (Devlin et al., 2019). The hyper-parameters were the following: $learning rate is 2e-5$, batch_size is 64, and the number of epochs was 15. We fine-tuned several state-of-the-art Transformer based models for relation extraction: BERT base, ruBERT, Sentence ruBERT. Their performance was evaluated using micro F1-score. The results are shown in Table 5. As we can see, Russian models outperformed BERT base, and Sentence ruBERT achieved the highest F1-score. 
+
+|  Model | F1-score  |
+|---|---|
+| OpenNRE, BERT Base  | 0.7  |
+| OpenNRE ruBERT | 0.97  |
+| OpenNRE, Sentence ruBERT | 0.95  |
 
 # Authors
 
