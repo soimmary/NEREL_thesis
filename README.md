@@ -55,9 +55,9 @@ The script is available [here](https://github.com/soimmary/NEREL_thesis/blob/mai
 
 # Authors
 
-- Maria Bocharova, the Higher School of Economics
-- Oleg Serikov, a scientific supervisor, the Higher School of Economics
-- Ekaterina Voloshina, a scientific supervisor, the University of Gothenburg
+- **Maria Bocharova**, the Higher School of Economics
+- **Oleg Serikov**, a scientific supervisor, the Higher School of Economics
+- **Ekaterina Voloshina**, a scientific supervisor, the University of Gothenburg
 
 # Bibgliography
 Atnashev, T., Ganeeva, V., Kazakov, R., Matyash, D., Sonkin, M., Voloshina, E., Serikov, O., & Artemova, E. (2022). Razmecheno: Named Entity Recognition from Digital Archive of Diaries" Prozhito". In Proceedings of the 5th International Conference on Computational Linguistics in Bulgaria (CLIB 2022), pages 22–38, Sofia, Bulgaria.
