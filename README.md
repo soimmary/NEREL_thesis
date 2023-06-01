@@ -24,7 +24,7 @@ In this research, data labelling will be carried out on a Russian crowdsourcing 
 
 The template is shown below.
 
-![alt text]([http://url/to/img.png](https://github.com/soimmary/NEREL_thesis/blob/main/toloka_interface/interface_example.png))
+![alt text](https://github.com/soimmary/NEREL_thesis/blob/main/toloka_interface/interface_example.png)
 
 Regarding our template, on the left side of the screen, workers see a sentence with already annotated named entities which have colourful frames and entity types (“PER”, “CHAR”, “LOC”, “ORG”, “FAC”) written inside the frames. As stated before, the sentences with labelled entities were taken from the “Razmecheno” dataset (Atnashev et al. 2022). On the right side of the screen, annotators can set a relation between two entities by clicking on them and choosing a proper relation out of the list, which appears as soon as a worker chooses two entities. The list of possible relations is due to the types of entities chosen by an annotator, otherwise it would be inconvenient for a worker to scroll down the list containing 19 lines. In addition, we have added two checkboxes (“No relations” and “Incorrect markup”) which must be used by annotators in case there are no relations between entities in a text, or if named entities are labelled incorrectly. The task interface was designed using Java Script.
 
