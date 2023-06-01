@@ -5,13 +5,13 @@ The aim of our research is to create a dataset with annotated relations between 
 # List of entity types
 |  No. | Relation type  | No.  | elation type  |  No. | elation type |
 |---|---|---|---|---|---|
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
+| 1.   |   |  8. |   | 15.  |   |
+| 2.  |    | 9. |   | 16.  |   |
+| 3. |   | 10.  |   | 17.  |   |
+| 4.  |   | 11.  |   | 18.  |   |
+| 5.  |   |  12. |   | 19.  |   |
+| 6.  |   | 13.  |   |   |   |
+| 7.  |   | 14.  |   |   |   |
 # Results of NER
 
 # Results of relation extracion
