@@ -14,13 +14,21 @@ The aim of our research is to create a dataset with annotated relations between 
 | 7.  |  place_of_death | 14.  | ethnicity |   |   |
 							
 			
-# Results of NER
+# 1. Results of NER
 We used "Razmecheno" (Atnashev et al., 2021) dataset to train our named entity recognition model. In "Razmecheno", to gain the same objective the researchers fine-tuned several Transformer-based models for named entity recognition (ruBERT, ruBERT-tiny, ruRoBERTa, XLM-RoBERTa) and evaluated their performance using overall micro F1-score. According to the results, ruBERT showed the best performance and achieved overall 0.81 F1-score. We improved this result using a different model and achieved **F1-score accounting for 0.87**. We used a Sentence RuBERT by DeepPavlov which is a “a representation‑based sentence encoder for Russian” and fine-tuned it on our dataset of personal-letters. In contrast to BERT, Sentence BERT exploits a siamese architecture. We assigned the following hyper-parameters: the number of epochs was 20, a learning rate accounted for 2e-5, and a weight_decay was 1e-4. As a loss function we used cross-entropy.
 
 The script and the results are available [here](https://github.com/soimmary/NEREL_thesis/blob/main/NER_model.ipynb).
 
+# 2. Crowdsourcing platform interface
+In this research, data labelling will be carried out on a Russian crowdsourcing platform “Yandex.Toloka”. We have designed our own interface for the relation extraction, taking into account the platform capabilities and paying attention to the usability and user-friendliness of an interface for annotators.
 
-# Results of relation extracion
+The template is shown below.
+
+![alt text](http://url/to/img.png)
+
+Regarding our template, on the left side of the screen, workers see a sentence with already annotated named entities which have colourful frames and entity types (“PER”, “CHAR”, “LOC”, “ORG”, “FAC”) written inside the frames. As stated before, the sentences with labelled entities were taken from the “Razmecheno” dataset (Atnashev et al. 2022). On the right side of the screen, annotators can set a relation between two entities by clicking on them and choosing a proper relation out of the list, which appears as soon as a worker chooses two entities. The list of possible relations is due to the types of entities chosen by an annotator, otherwise it would be inconvenient for a worker to scroll down the list containing 19 lines. In addition, we have added two checkboxes (“No relations” and “Incorrect markup”) which must be used by annotators in case there are no relations between entities in a text, or if named entities are labelled incorrectly. The task interface was designed using Java Script.
+
+# 3. Results of relation extracion
 
 # Authors
 
