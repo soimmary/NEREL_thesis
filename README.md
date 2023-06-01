@@ -35,7 +35,14 @@ All in all, the annotated corpus comprises a grand total of 750 distinct tasks, 
 
 ![alt text](https://github.com/soimmary/NEREL_thesis/blob/main/postprocessing/annotation_results.png)
 
-# 4. Results of relation extracion
+# 5. Dataset for relatino extraction
+The crowdsoursed annotations were aggregated, turned into [https://semeval2.fbk.eu/semeval2.php](SemEval) format and split into train, validation and test datasets.
+
+[NRE_TRAIN.txt](https://github.com/soimmary/NEREL_thesis/blob/main/NRE_TRAIN.txt)
+[NRE_VAL.txt](https://github.com/soimmary/NEREL_thesis/blob/main/NRE_VAL.txt)
+[NRE_TEST.txt](https://github.com/soimmary/NEREL_thesis/blob/main/NRE_TEST.txt)
+
+# 5. Results of relation extracion
 We carried out experiments on the named entity relation dataset we have collected. Following the strategy of (Loukachevitch et al., 2021), we adopted an OpenNRE framework (Han et al., 2019) and used BERT (Devlin et al., 2019). The hyper-parameters were the following: $learning rate is 2e-5$, batch_size is 64, and the number of epochs was 15. We fine-tuned several state-of-the-art Transformer based models for relation extraction: BERT base, ruBERT, Sentence ruBERT. Their performance was evaluated using micro F1-score. The results are shown in Table 5. As we can see, Russian models outperformed BERT base, and Sentence ruBERT achieved the highest F1-score. 
 
 |  Model | F1-score  |
@@ -44,8 +51,13 @@ We carried out experiments on the named entity relation dataset we have collecte
 | OpenNRE ruBERT | 0.97  |
 | OpenNRE, Sentence ruBERT | 0.95  |
 
+The script is available [here](https://github.com/soimmary/NEREL_thesis/blob/main/OpenNRE_training.ipynb).
+
 # Authors
 
 - Maria Bocharova, the Higher School of Economics
 - Oleg Serikov, a scientific supervisor, the Higher School of Economics
-- Ekaterina Voloshina, a scientific supervisor, 
+- Ekaterina Voloshina, a scientific supervisor, the University of Gothenburg
+
+# Bibgliography
+Atnashev, T., Ganeeva, V., Kazakov, R., Matyash, D., Sonkin, M., Voloshina, E., Serikov, O., & Artemova, E. (2022). Razmecheno: Named Entity Recognition from Digital Archive of Diaries" Prozhito". In Proceedings of the 5th International Conference on Computational Linguistics in Bulgaria (CLIB 2022), pages 22–38, Sofia, Bulgaria.
