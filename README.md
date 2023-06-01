@@ -31,8 +31,10 @@ Regarding our template, on the left side of the screen, workers see a sentence w
 The scripts and the instructions are available [here](https://github.com/soimmary/NEREL_thesis/tree/main/toloka_interface).
 
 # 3. Annotation results
+All in all, the annotated corpus comprises a grand total of 750 distinct tasks, 70% of which contain one or more relations between entities. The total number of tokens accounts for 18235 and a number of relations is 940. Therefore, all the multiple relations within one task were annotated. The distribution of the relation classes is depicted below.
 
-![](https://github.com/soimmary/NEREL_thesis/blob/main/postprocessing/annotation_results.png)
+[](https://github.com/soimmary/NEREL_thesis/blob/main/postprocessing/annotation_results.png =20x20)
+
 # 4. Results of relation extracion
 
 # Authors
